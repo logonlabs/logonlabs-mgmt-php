@@ -1,0 +1,10 @@
+
+label {
+    font-family: monospace;
+}
+
+.json {
+    background: #000125;
+    padding: 1rem;
+    border-radius: .25rem;
+}
