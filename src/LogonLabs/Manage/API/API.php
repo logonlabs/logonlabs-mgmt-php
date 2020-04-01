@@ -160,9 +160,9 @@ class API {
         return $this->connection->delete($cmd);
     }
 
-    public function shareProvider($identity_provider_id, $user_id) {
-        $cmd = self::ROUTE_PROVIDERS . '/' . $identity_provider_id . '/' . self::ROUTE_USERS . '/' . $user_id;
-        return $this->connection->post($cmd);
+    public function shareProvider($identity_provider_id, $email_address) {
+        $cmd = self::ROUTE_PROVIDERS . '/' . $identity_provider_id . '/' . self::ROUTE_USERS;
+        return $this->connection->post($cmd, $email_address);
     }
 
     public function unshareProvider($identity_provider_id, $user_id) {

@@ -206,8 +206,8 @@ class LogonClient {
         return $this->api()->removeProvider($identity_provider_id);
     }
 
-    public function shareProvider($identity_provider_id, $user_id) {
-        return $this->api()->shareProvider($identity_provider_id, $user_id);
+    public function shareProvider($identity_provider_id, $email_address) {
+        return $this->api()->shareProvider($identity_provider_id, $email_address);
     }
 
     public function unshareProvider($identity_provider_id, $user_id) {

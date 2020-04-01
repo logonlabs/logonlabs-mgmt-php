@@ -448,7 +448,7 @@ $logonClient->removeProvider($identityProviderId);
 
 #### ShareProvider
 ```php
-$logonClient->shareProvider($identityProviderId, $userId);
+$logonClient->shareProvider($identityProviderId, $email_address);
 ```
 
 #### UnshareProvider

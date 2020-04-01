@@ -1,7 +1,7 @@
 {
     "name": "logonlabs/logon-manage-sdk-php",
     "type": "library",
-    "version": "1.0.0",
+    "version": "1.7.0",
     "description": "LogonLabs Management API SDK PHP",
     "require": {
         "rmccue/requests": "^1.7"
