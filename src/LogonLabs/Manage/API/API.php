@@ -149,6 +149,11 @@ class API {
         $cmd = self::ROUTE_PROVIDERS;
         return $this->connection->get($cmd, $data);
     }
+	
+    public function getProviderUsers($identity_provider_id, $data) {
+        $cmd = self::ROUTE_PROVIDERS . '/' . $identity_provider_id . '/' . self::ROUTE_USERS;
+        return $this->connection->get($cmd, $data);
+    }
 
     public function updateProvider($identity_provider_id, $data) {
         $cmd = self::ROUTE_PROVIDERS . '/' . $identity_provider_id;

@@ -440,6 +440,13 @@ foreach($providers as $provider) {
 }
 ```
 
+#### GetProviderUsers
+
+```php
+$logonClient->getProviderUsers($identityProviderId);
+```
+
+
 #### RemoveProvider
 
 ```php
