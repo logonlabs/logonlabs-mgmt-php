@@ -439,6 +439,12 @@ foreach($providers as $provider) {
     }
 }
 ```
+#### GetProviderApps
+
+```php
+$logonClient->getProviderApps($identityProviderId);
+```
+
 
 #### GetProviderUsers
 

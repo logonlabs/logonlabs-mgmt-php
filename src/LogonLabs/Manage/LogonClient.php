@@ -196,6 +196,11 @@ class LogonClient {
         $data = $this->parsePagingOptions($options);
         return $this->api()->getProviders($data);
     }
+	
+    public function getProviderApps($identity_provider_id, $options = array()) {
+        $data = $this->parsePagingOptions($options);
+        return $this->api()->getProviderApps($identity_provider_id, $data);
+    }
 
     public function getProviderUsers($identity_provider_id, $options = array()) {
         $data = $this->parsePagingOptions($options);
